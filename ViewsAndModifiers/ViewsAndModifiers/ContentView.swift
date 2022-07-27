@@ -14,7 +14,7 @@ struct ContentView: View {
                 print(type(of: self.body))
             }
             .frame(width: 200, height: 200)
-            .background(.red)
+            .background(.purple)
             .foregroundStyle(.white)
             
             Text("Text")
