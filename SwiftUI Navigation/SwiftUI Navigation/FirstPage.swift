@@ -14,10 +14,10 @@ struct FirstPage: View {
                 SecondPage()
             }
             .navigationTitle("Home Page")
-            .navigationBarTitleDisplayMode(.inline)
+            //.navigationBarTitleDisplayMode(.inline)
         }
         
-         /*VStack {
+         VStack {
             Text("This is a wide text element")
                 .font(.body)
                 .frame(width: 200, height: 50, alignment: .leading)
@@ -29,7 +29,7 @@ struct FirstPage: View {
                 .frame(width: 200, height: 50, alignment: .leading)
                 .lineLimit(1)
                 .allowsTightening(false)
-        }*/
+        }
         
     }
 }

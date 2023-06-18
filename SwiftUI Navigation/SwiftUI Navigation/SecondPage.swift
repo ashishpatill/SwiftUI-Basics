@@ -16,3 +16,9 @@ struct SecondPage: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
+
+struct SecondPage_Previews: PreviewProvider {
+    static var previews: some View {
+        SecondPage()
+    }
+}
