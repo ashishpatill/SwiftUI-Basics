@@ -11,6 +11,7 @@
 		049141BD2A3E1F4B00518719 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049141BC2A3E1F4B00518719 /* ContentView.swift */; };
 		049141BF2A3E1F4B00518719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049141BE2A3E1F4B00518719 /* Assets.xcassets */; };
 		049141C22A3E1F4B00518719 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049141C12A3E1F4B00518719 /* Preview Assets.xcassets */; };
+		04FAF6CB2A40A49700EDC11A /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAF6CA2A40A49700EDC11A /* CustomButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		049141BC2A3E1F4B00518719 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		049141BE2A3E1F4B00518719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049141C12A3E1F4B00518719 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04FAF6CA2A40A49700EDC11A /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				049141BA2A3E1F4B00518719 /* BackgroundsAndOverlaysApp.swift */,
+				04FAF6CA2A40A49700EDC11A /* CustomButtonView.swift */,
 				049141BC2A3E1F4B00518719 /* ContentView.swift */,
 				049141BE2A3E1F4B00518719 /* Assets.xcassets */,
 				049141C02A3E1F4B00518719 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FAF6CB2A40A49700EDC11A /* CustomButtonView.swift in Sources */,
 				049141BD2A3E1F4B00518719 /* ContentView.swift in Sources */,
 				049141BB2A3E1F4B00518719 /* BackgroundsAndOverlaysApp.swift in Sources */,
 			);
