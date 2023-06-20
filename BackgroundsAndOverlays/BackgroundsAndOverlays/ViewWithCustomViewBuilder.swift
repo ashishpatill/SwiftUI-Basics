@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ViewWithCustomViewBuilder: View {
     var body: some View {
-        CustomViewBuilder {
-            Text("This is a custom alert")
+        VStack {
+            CustomAlertView(type: .onlyTitle, title: Text("This is a custom alert"))
+            CustomAlertView(type: .withSubtitle, title: Text("This is a custom alert with subtitle"), subtitle: Text("This is subtitle"))
         }
+        
     }
 }
 
@@ -27,7 +29,7 @@ struct CustomViewBuilder <Content: View>: View {
             Image(systemName: "xmark.octagon.fill")
                 .resizable()
                 .frame(width: 65, height: 65)
-                .foregroundColor(Color(#colorLiteral(red:1, green: 0, blue:0, alpha:0)))
+                .foregroundColor(.pink)
                 .padding()
             content
                 .padding()
@@ -40,20 +42,24 @@ struct CustomViewBuilder <Content: View>: View {
                     
                 }, label: {
                     Text("Cancel")
-                        .font(.system(size: 14, weight: .semibold))
+                        .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.red)
+                        .padding(.horizontal, 50)
                 })
+                .contentShape(Rectangle())
                 Spacer()
                 RoundedRectangle(cornerRadius: 1.0)
-                    .frame(width: 1, height: 25)
+                    .frame(width: 1, height: 35)
                 Spacer()
                 Button(action: {
                     
                 }, label: {
                     Text("Confirm")
-                        .font(.system(size: 14, weight: .semibold))
+                        .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.blue)
+                        .padding(.horizontal, 50)
                 })
+                .contentShape(Rectangle())
                 Spacer()
             }
             .padding(.bottom, 13)
@@ -64,6 +70,35 @@ struct CustomViewBuilder <Content: View>: View {
                 .opacity(0.8)
         )
         .padding()
+    }
+}
+
+struct CustomAlertView: View {
+    enum alertType {
+        case onlyTitle, withSubtitle
+    }
+    
+    let type: alertType
+    var title: Text
+    var subtitle: Text?
+    
+    var body: some View {
+        alertContainer
+    }
+    
+    @ViewBuilder private var alertContainer: some View {
+        switch type {
+        case .onlyTitle:
+            CustomViewBuilder {
+                title
+            }
+        case .withSubtitle:
+            CustomViewBuilder {
+                title
+                subtitle
+            }
+            .padding(.vertical, 10)
+        }
     }
 }
 
