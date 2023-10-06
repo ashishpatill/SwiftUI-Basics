@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0404D4AB2ABE851000076832 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404D4AA2ABE851000076832 /* HapticManager.swift */; };
 		0442D05C2ACFA15500021E14 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442D05B2ACFA15500021E14 /* TypeAlias.swift */; };
+		0442D05E2ACFA3DF00021E14 /* EscapingClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442D05D2ACFA3DF00021E14 /* EscapingClosures.swift */; };
+		0442D0622ACFADEF00021E14 /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442D0612ACFADEF00021E14 /* CodableView.swift */; };
 		0480ED532AB7650700A4B663 /* SwiftUI_BasicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480ED522AB7650700A4B663 /* SwiftUI_BasicsApp.swift */; };
 		0480ED552AB7650700A4B663 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480ED542AB7650700A4B663 /* ContentView.swift */; };
 		0480ED572AB7650800A4B663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0480ED562AB7650800A4B663 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		0404D4AA2ABE851000076832 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		0442D05B2ACFA15500021E14 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		0442D05D2ACFA3DF00021E14 /* EscapingClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingClosures.swift; sourceTree = "<group>"; };
+		0442D0612ACFADEF00021E14 /* CodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
 		0480ED4F2AB7650700A4B663 /* SwiftUI Basics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Basics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0480ED522AB7650700A4B663 /* SwiftUI_BasicsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BasicsApp.swift; sourceTree = "<group>"; };
 		0480ED542AB7650700A4B663 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				04DC4AAF2ABD624000EE8E7E /* SoundManager.swift */,
 				0404D4AA2ABE851000076832 /* HapticManager.swift */,
 				0442D05B2ACFA15500021E14 /* TypeAlias.swift */,
+				0442D05D2ACFA3DF00021E14 /* EscapingClosures.swift */,
+				0442D0612ACFADEF00021E14 /* CodableView.swift */,
 				0480ED562AB7650800A4B663 /* Assets.xcassets */,
 				04DC4AB32ABD646700EE8E7E /* Sounds */,
 				0480ED582AB7650800A4B663 /* Preview Content */,
@@ -174,10 +180,12 @@
 				0480ED632AB7881D00A4B663 /* Multiple Sheets.swift in Sources */,
 				0480ED552AB7650700A4B663 /* ContentView.swift in Sources */,
 				0404D4AB2ABE851000076832 /* HapticManager.swift in Sources */,
+				0442D0622ACFADEF00021E14 /* CodableView.swift in Sources */,
 				0480ED532AB7650700A4B663 /* SwiftUI_BasicsApp.swift in Sources */,
 				0480ED612AB7658400A4B663 /* GeometryReaderView.swift in Sources */,
 				04D346FC2AB80B9C00CC7CD1 /* Maskview.swift in Sources */,
 				0442D05C2ACFA15500021E14 /* TypeAlias.swift in Sources */,
+				0442D05E2ACFA3DF00021E14 /* EscapingClosures.swift in Sources */,
 				04DC4AB02ABD624000EE8E7E /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
