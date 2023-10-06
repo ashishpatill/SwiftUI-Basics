@@ -84,6 +84,7 @@ class CodableViewModel: ObservableObject {
         print("JSON string:")
         print(jsonString)
         
+        // Manual decoding json object
         /*
         if let localData = try? JSONSerialization.jsonObject(with: jsonData),
            let dictionary = localData as? [String:Any],
@@ -99,6 +100,7 @@ class CodableViewModel: ObservableObject {
         }
          */
         
+        // Using 'try' for decoding json data with Decodable
         /*
         do {
             self.customer = try JSONDecoder().decode(CustomerModel.self, from: jsonData)
@@ -107,6 +109,7 @@ class CodableViewModel: ObservableObject {
         }
         */
         
+        // Using 'try?' for decoding json data with Decodable
         self.customers = try? JSONDecoder().decode(CustomerArray.self, from: jsonData)
         
     }
