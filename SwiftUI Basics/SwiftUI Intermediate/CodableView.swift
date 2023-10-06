@@ -23,7 +23,6 @@ struct CodableView: View {
                 }
             }
         }
-        
     }
 }
 
@@ -33,6 +32,7 @@ struct CustomerModel: Identifiable, Codable {
     let points: Int
     let isPremium: Bool
     
+    // Dont need encoding and decoding with 'Codable'
     /*
     init(id: String, name:String, points: Int, isPremium: Bool) {
         self.id = id
@@ -115,6 +115,7 @@ class CodableViewModel: ObservableObject {
     }
     
     func getJsonData() -> Data? {
+        // Encoding Json Data
         /*
         let jsonArray: [[String:Any]] = [
             [
@@ -134,6 +135,7 @@ class CodableViewModel: ObservableObject {
         let jsonData = try? JSONSerialization.data(withJSONObject: jsonArray, options: [])
          return jsonData
 
+        // Encoding Json Data for sending json via post request
         */
         let customers = [
             CustomerModel(id: "111", name: "Emily", points: 100, isPremium: false),
