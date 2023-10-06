@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct SwiftUI_BasicsApp: App {
+struct SwiftUI_IntermediateApp: App {
     var body: some Scene {
         WindowGroup {
             CodableView()
