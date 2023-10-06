@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0404D4AB2ABE851000076832 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404D4AA2ABE851000076832 /* HapticManager.swift */; };
 		0480ED532AB7650700A4B663 /* SwiftUI_BasicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480ED522AB7650700A4B663 /* SwiftUI_BasicsApp.swift */; };
 		0480ED552AB7650700A4B663 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480ED542AB7650700A4B663 /* ContentView.swift */; };
 		0480ED572AB7650800A4B663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0480ED562AB7650800A4B663 /* Assets.xcassets */; };
 		0480ED5A2AB7650800A4B663 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0480ED592AB7650800A4B663 /* Preview Assets.xcassets */; };
 		0480ED612AB7658400A4B663 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480ED602AB7658400A4B663 /* GeometryReaderView.swift */; };
 		0480ED632AB7881D00A4B663 /* Multiple Sheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480ED622AB7881D00A4B663 /* Multiple Sheets.swift */; };
+		04D346FC2AB80B9C00CC7CD1 /* Maskview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D346FB2AB80B9C00CC7CD1 /* Maskview.swift */; };
+		04DC4AB02ABD624000EE8E7E /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC4AAF2ABD624000EE8E7E /* SoundManager.swift */; };
+		04DC4AB22ABD646100EE8E7E /* RetroGame.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04DC4AB12ABD646100EE8E7E /* RetroGame.wav */; };
+		04DC4AB52ABD679200EE8E7E /* Whoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04DC4AB42ABD679200EE8E7E /* Whoosh.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0404D4AA2ABE851000076832 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		0480ED4F2AB7650700A4B663 /* SwiftUI Basics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Basics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0480ED522AB7650700A4B663 /* SwiftUI_BasicsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BasicsApp.swift; sourceTree = "<group>"; };
 		0480ED542AB7650700A4B663 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +29,10 @@
 		0480ED592AB7650800A4B663 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0480ED602AB7658400A4B663 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		0480ED622AB7881D00A4B663 /* Multiple Sheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiple Sheets.swift"; sourceTree = "<group>"; };
+		04D346FB2AB80B9C00CC7CD1 /* Maskview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maskview.swift; sourceTree = "<group>"; };
+		04DC4AAF2ABD624000EE8E7E /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		04DC4AB12ABD646100EE8E7E /* RetroGame.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RetroGame.wav; sourceTree = "<group>"; };
+		04DC4AB42ABD679200EE8E7E /* Whoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Whoosh.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +69,11 @@
 				0480ED542AB7650700A4B663 /* ContentView.swift */,
 				0480ED602AB7658400A4B663 /* GeometryReaderView.swift */,
 				0480ED622AB7881D00A4B663 /* Multiple Sheets.swift */,
+				04D346FB2AB80B9C00CC7CD1 /* Maskview.swift */,
+				04DC4AAF2ABD624000EE8E7E /* SoundManager.swift */,
+				0404D4AA2ABE851000076832 /* HapticManager.swift */,
 				0480ED562AB7650800A4B663 /* Assets.xcassets */,
+				04DC4AB32ABD646700EE8E7E /* Sounds */,
 				0480ED582AB7650800A4B663 /* Preview Content */,
 			);
 			path = "SwiftUI Basics";
@@ -71,6 +85,15 @@
 				0480ED592AB7650800A4B663 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04DC4AB32ABD646700EE8E7E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				04DC4AB12ABD646100EE8E7E /* RetroGame.wav */,
+				04DC4AB42ABD679200EE8E7E /* Whoosh.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +154,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DC4AB22ABD646100EE8E7E /* RetroGame.wav in Resources */,
 				0480ED5A2AB7650800A4B663 /* Preview Assets.xcassets in Resources */,
 				0480ED572AB7650800A4B663 /* Assets.xcassets in Resources */,
+				04DC4AB52ABD679200EE8E7E /* Whoosh.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +170,11 @@
 			files = (
 				0480ED632AB7881D00A4B663 /* Multiple Sheets.swift in Sources */,
 				0480ED552AB7650700A4B663 /* ContentView.swift in Sources */,
+				0404D4AB2ABE851000076832 /* HapticManager.swift in Sources */,
 				0480ED532AB7650700A4B663 /* SwiftUI_BasicsApp.swift in Sources */,
 				0480ED612AB7658400A4B663 /* GeometryReaderView.swift in Sources */,
+				04D346FC2AB80B9C00CC7CD1 /* Maskview.swift in Sources */,
+				04DC4AB02ABD624000EE8E7E /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
