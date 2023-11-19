@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043081952AD5A9D9006490A7 /* NotificationManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043081942AD5A9D9006490A7 /* NotificationManagerView.swift */; };
 		045B6F832ACFC38B0078965D /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6F732ACFC38B0078965D /* SoundManager.swift */; };
 		045B6F842ACFC38B0078965D /* EscapingClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6F742ACFC38B0078965D /* EscapingClosures.swift */; };
 		045B6F852ACFC38B0078965D /* Multiple Sheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6F752ACFC38B0078965D /* Multiple Sheets.swift */; };
@@ -16,7 +17,7 @@
 		045B6F892ACFC38B0078965D /* Whoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 045B6F7B2ACFC38B0078965D /* Whoosh.wav */; };
 		045B6F8A2ACFC38B0078965D /* RetroGame.wav in Resources */ = {isa = PBXBuildFile; fileRef = 045B6F7C2ACFC38B0078965D /* RetroGame.wav */; };
 		045B6F8B2ACFC38B0078965D /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6F7D2ACFC38B0078965D /* TypeAlias.swift */; };
-		045B6F8C2ACFC38B0078965D /* SwiftUI_BasicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6F7E2ACFC38B0078965D /* SwiftUI_BasicsApp.swift */; };
+		045B6F8C2ACFC38B0078965D /* SwiftUI_IntermediateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6F7E2ACFC38B0078965D /* SwiftUI_IntermediateApp.swift */; };
 		045B6F8D2ACFC38B0078965D /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6F7F2ACFC38B0078965D /* GeometryReaderView.swift */; };
 		045B6F8E2ACFC38B0078965D /* Maskview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6F802ACFC38B0078965D /* Maskview.swift */; };
 		045B6F8F2ACFC38B0078965D /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B6F812ACFC38B0078965D /* CodableView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043081942AD5A9D9006490A7 /* NotificationManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerView.swift; sourceTree = "<group>"; };
 		045B6F732ACFC38B0078965D /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		045B6F742ACFC38B0078965D /* EscapingClosures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscapingClosures.swift; sourceTree = "<group>"; };
 		045B6F752ACFC38B0078965D /* Multiple Sheets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Multiple Sheets.swift"; sourceTree = "<group>"; };
@@ -33,7 +35,7 @@
 		045B6F7B2ACFC38B0078965D /* Whoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Whoosh.wav; sourceTree = "<group>"; };
 		045B6F7C2ACFC38B0078965D /* RetroGame.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RetroGame.wav; sourceTree = "<group>"; };
 		045B6F7D2ACFC38B0078965D /* TypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
-		045B6F7E2ACFC38B0078965D /* SwiftUI_BasicsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUI_BasicsApp.swift; sourceTree = "<group>"; };
+		045B6F7E2ACFC38B0078965D /* SwiftUI_IntermediateApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUI_IntermediateApp.swift; sourceTree = "<group>"; };
 		045B6F7F2ACFC38B0078965D /* GeometryReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		045B6F802ACFC38B0078965D /* Maskview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maskview.swift; sourceTree = "<group>"; };
 		045B6F812ACFC38B0078965D /* CodableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
@@ -55,19 +57,20 @@
 		045B6F722ACFC38B0078965D /* SwiftUI Intermediate */ = {
 			isa = PBXGroup;
 			children = (
-				045B6F732ACFC38B0078965D /* SoundManager.swift */,
+				045B6F7E2ACFC38B0078965D /* SwiftUI_IntermediateApp.swift */,
+				045B6F822ACFC38B0078965D /* ContentView.swift */,
 				045B6F742ACFC38B0078965D /* EscapingClosures.swift */,
 				045B6F752ACFC38B0078965D /* Multiple Sheets.swift */,
 				045B6F762ACFC38B0078965D /* HapticManager.swift */,
-				045B6F772ACFC38B0078965D /* Assets.xcassets */,
-				045B6F782ACFC38B0078965D /* Preview Content */,
-				045B6F7A2ACFC38B0078965D /* Sounds */,
 				045B6F7D2ACFC38B0078965D /* TypeAlias.swift */,
-				045B6F7E2ACFC38B0078965D /* SwiftUI_BasicsApp.swift */,
 				045B6F7F2ACFC38B0078965D /* GeometryReaderView.swift */,
 				045B6F802ACFC38B0078965D /* Maskview.swift */,
 				045B6F812ACFC38B0078965D /* CodableView.swift */,
-				045B6F822ACFC38B0078965D /* ContentView.swift */,
+				045B6F732ACFC38B0078965D /* SoundManager.swift */,
+				043081942AD5A9D9006490A7 /* NotificationManagerView.swift */,
+				045B6F772ACFC38B0078965D /* Assets.xcassets */,
+				045B6F7A2ACFC38B0078965D /* Sounds */,
+				045B6F782ACFC38B0078965D /* Preview Content */,
 			);
 			path = "SwiftUI Intermediate";
 			sourceTree = "<group>";
@@ -181,8 +184,9 @@
 				045B6F832ACFC38B0078965D /* SoundManager.swift in Sources */,
 				045B6F852ACFC38B0078965D /* Multiple Sheets.swift in Sources */,
 				045B6F8D2ACFC38B0078965D /* GeometryReaderView.swift in Sources */,
+				043081952AD5A9D9006490A7 /* NotificationManagerView.swift in Sources */,
 				045B6F8F2ACFC38B0078965D /* CodableView.swift in Sources */,
-				045B6F8C2ACFC38B0078965D /* SwiftUI_BasicsApp.swift in Sources */,
+				045B6F8C2ACFC38B0078965D /* SwiftUI_IntermediateApp.swift in Sources */,
 				045B6F902ACFC38B0078965D /* ContentView.swift in Sources */,
 				045B6F862ACFC38B0078965D /* HapticManager.swift in Sources */,
 				045B6F842ACFC38B0078965D /* EscapingClosures.swift in Sources */,
